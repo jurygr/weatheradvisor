@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather Advisor</title>
+  <meta name="author" content="Jury Griseri">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Risorse-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <header>
+      <div class="header" id="header">
+        <h1>Weather Advisor</h1>
+      </div>
+    </header>
+    <div class="search-bar">
+      <form id="request" method="post">
+        <input type="text" class="search-box" id="city" name="city" autocomplete="city" placeholder="Cerca la tua città...." />
+        <input type="submit" class="button" value="Cerca">
+      </form>
+    </div>
+    <main>
+      <div class="main-result">
+        <a class="title" id="city-name"></a>
+
+        <a class="subtitle" id="country"></a>
+
+        <a class="info" id="day"></a>
+
+        <div class="instant-info">
+          <a class="info"><img class="icon" id="state-icon"></a>
+          <br>
+          <a class="info" id="state"></a>
+          <br>
+          <a id="temp"></a>
+        </div>
+
+        <div id="main-measure">
+          <table>
+            <tr>
+              <td>
+                <a class="info">Temperatura-Max</a>
+              </td>
+              <td>
+                <a class="info" id="temp-max"></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a class="info">Temperatura-Min</a>
+              </td>
+              <td>
+                <a class="info" id="temp-min"></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a class="info">Pressione</a>
+              </td>
+              <td>
+                <a class="info" id="pressure"></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a class="info">Umidità</a>
+              </td>
+              <td>
+                <a class="info" id="humidity"></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a class="info">Visibilità</a>
+              </td>
+              <td>
+                <a class="info" id="visibility"></a>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="wind">
+          <a class="subtitle">Vento</a>
+          <br>
+          <a class="info">Velocità:</a>
+          <a class="info" id="speed"></a>
+          <br>
+          <a class="info">Direzione:</a>
+          <a class="info" id="deg"></a>
+        </div>
+        <br>
+        <a class="subtitle">Sole</a>
+        <br>
+        <a class="info">Sorge:</a>
+        <a class="info" id="sunrise"></a>
+        <br>
+        <a class="info">Tramonto:</a>
+        <a class="info" id="sunset"></a>
+      </div>
+  </div>
+  </main>
+  </div>
+  <div class="footer">
+    <div id="social">
+      <a href="https://instagram.com/jurygriseri"> <img class="icon" src="icon/instagram.png"> </a>
+      <a href="https://www.facebook.com/jury.griseri"> <img class="icon" src="icon/facebook.png"> </a>
+      <a href="https://linkedin.com/in/jury-griseri-26012a172"><img class="icon" src="icon/linkedin.png"> </a>
+      <a href="mailto:jury.griseri@gmail.com"><img class="icon" src="icon/mail.png"> </a>
+    </div>
+    <div id="credit">
+      <p class="info">Creato con:</p>
+      <a href="https://jquery.com/"> <img src="icon/jquery.png"> </a>
+      <a href="https://openweathermap.org/"><img src="icon/openweather.png"></a>
+      <a href="https://sweetalert.js.org/"><img src="icon/sweetalert.png"></a>
+    </div>
+
+    <p class="infos">Weather Advisor</p>
+  </div>
+  <script type="text/javascript" src="js/jQuery.js"> </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script type="text/javascript" src="js/weather.js"></script>
+
+</body>
+
+</html>
